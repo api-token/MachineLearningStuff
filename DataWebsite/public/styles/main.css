@@ -1,0 +1,32 @@
+body {
+    background: #DDDDDD;
+}
+
+.navbar {
+    background-color: #800000;
+    color: white;
+}
+
+.page-container {
+    margin-top: 75px;
+}
+
+#colorContainer {
+    width: auto;
+    height: 20em;
+}
+
+#lightText {
+    text-align: center;
+    color: white;
+    font: bold 3em san-serif;
+    margin: auto;
+    
+}
+
+#darkText {
+    text-align: center;
+    color: black;
+    font: bold 3em san-serif;
+    margin: auto;
+}
