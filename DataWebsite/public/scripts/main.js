@@ -64,9 +64,9 @@ app.PageController = class {
 
 	updateColor() {
 		console.log("Color Update");
-		var r = getRandomInt(0, 255);
-		var g = getRandomInt(0, 255);
-		var b = getRandomInt(0, 255);
+		var r = Math.random() * 255;
+		var g = Math.random() * 255;
+		var b = Math.random() * 255;
 		
 		this.prediction.innerHTML = this.predict(r/255, g/255, b/255);
 		this.color = new app.DataEntry(r/255, g/255, b/255, null);
@@ -100,7 +100,7 @@ app.PageManager = class {
 			[app.FB_KEY_DATA]: dataEntry.toString()
 		})
 		.then((docRef) => {
-			console.log("Document written with ID: ", docRef.id);
+			console.log("Reading for color: ", dataEntry.toString());
 		})
 		.catch((error) => {
 			console.log("Error adding document: ", error);
